@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    form {
+      margin: 50px;
+      font-family: Arial, sans-serif;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type=text] {
+      width: 300px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    input[type=submit] {
+      width: 200px;
+      padding: 10px;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <form action="Controlleur1.java" method="GET">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" placeholder="Entrez le nom de la matière">
+
+    <label for="hours">Nb heures :</label>
+    <input type="text" id="hours" name="hours" placeholder="Entrez le nombre d'heures">
+
+    <input type="submit" value="Créer cette matière">
+  </form>
+</body>
+</html>
